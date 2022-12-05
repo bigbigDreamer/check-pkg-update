@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "lib": ["ESNext"],
+    "strict": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "declaration": true,
+    "allowSyntheticDefaultImports": true /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */,
+    "forceConsistentCasingInFileNames": true, /* Disallow inconsistently-cased references to the same file. */
+    "emitDeclarationOnly": true,
+    "typeRoots": ["./node_modules/@types"]
+  },
+  "exclude": [
+    "node_modules",
+    "lib",
+    "es",
+    "dist",
+    "**/__tests__",
+    "**/__test__",
+    "**/demo",
+    "types",
+    "jest.config.js",
+    "babel.config.js",
+    "vite.config.ts",
+    ".eslintrc.js"
+  ]
+}

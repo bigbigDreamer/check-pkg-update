@@ -1,0 +1,29 @@
+{
+  "name": "@montagejs/check-pkg-update",
+  "version": "1.0.0",
+  "description": "check pkg need update",
+  "main": "dist/index.mjs",
+  "module": "dist/index.js",
+  "typings": "types/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["npm", "check update", "version check", "version diff"],
+  "author": "scholar(书生)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/cross-spawn": "^6.0.2",
+    "@types/semver": "^7.3.13",
+    "vite": "^3.2.4",
+    "vite-plugin-dts": "^1.7.1"
+  },
+  "files": ["dist", "types"],
+  "dependencies": {
+    "registry-url": "^6.0.1",
+    "semver": "^7.3.8",
+    "undici": "^5.13.0"
+  }
+}
