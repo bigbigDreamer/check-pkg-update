@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/bigbigDreamer/check-pkg-update/compare/v1.1.0...v1.2.0) (2022-12-05)
+
+
+### Features
+
+* access changelog ([58ae278](https://github.com/bigbigDreamer/check-pkg-update/commit/58ae278a2b8ad4304047f39561ac59ce92f17359))
+
 ## 1.1.0 (2022-12-05)
 
 
