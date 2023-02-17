@@ -1,5 +1,7 @@
 # check-pkg-update
 
+[![XO code style](https://shields.io/badge/code_style-5ed9c7?logo=xo&labelColor=gray)](https://github.com/xojs/xo)
+
 > **Background**
 >   
 > Some open-source `cli tool` maybe need auto check that whether it need update the latest version when `exec` some commands. 

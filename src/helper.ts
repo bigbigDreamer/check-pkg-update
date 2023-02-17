@@ -1,11 +1,11 @@
-import { request } from "undici";
+import {execSync} from 'node:child_process';
+import {request} from 'undici';
 import registryUrl from 'registry-url';
-import { execSync } from 'child_process';
 
-const standardHeaders = {
+const standardHeaders: Record<string, string> = {
     accept: 'application/vnd.npm.install-v1+json; q=1.0, application/json; q=0.8, */*',
-}
+};
 
-export function checkForLatestVersion(pkgName: string) {
-    return request(`${registryUrl()}/${pkgName}`, { method: 'GET', headers: standardHeaders }).then(res => res.body.json()).then(res => res?.['dist-tags']?.latest).catch(() => execSync(`npm view ${pkgName} version`).toString().trim() )
+export async function checkForLatestVersion(pkgName: string): Promise<string> {
+    return request(`${registryUrl()}/${pkgName}`, {method: 'GET', headers: standardHeaders}).then(async response => response.body.json()).then(response => response?.['dist-tags']?.latest as string).catch(() => execSync(`npm view ${pkgName} version`).toString().trim());
 }
