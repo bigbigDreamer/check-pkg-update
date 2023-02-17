@@ -2,6 +2,7 @@ import {execSync} from 'node:child_process';
 import {request} from 'undici';
 import registryUrl from 'registry-url';
 
+// default standardHeaders config
 const standardHeaders: Record<string, string> = {
     accept: 'application/vnd.npm.install-v1+json; q=1.0, application/json; q=0.8, */*',
 };
