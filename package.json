@@ -1,6 +1,6 @@
 {
   "name": "@montagejs/check-pkg-update",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "check pkg need update",
   "main": "dist/cjs.lib.js",
   "module": "dist/es.lib.js",
